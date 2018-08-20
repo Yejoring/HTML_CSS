@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+    <head><title>input tag</title></head>
+    <body>
+        <form>
+            <input type="text" name="name"><br>
+            <input type="password" name="password"><br>
+            <input type="file" name="file"><br>
+            <input type="submit">
+
+            <hr>
+
+            <input type="text" placeholder="text area"><br>
+            <input type="button" value="button"><br>
+            
+            <label for="cat_ck">고양이</label>
+            <input type="checkbox" id="cat_ck" value="cat" name="animal">
+            <label for="dog_ck">멍멍이</label>
+            <input type="checkbox" id="dog_ck" value="dog" name="animal">
+            <label for="pick_ck">삐약이</label>
+            <input type="checkbox" id="pick_ck" value="pick" name="animal">
+
+            <br>
+
+            <input type="hidden"><br>
+            <input type="image" value="image"><br>
+            <input type="radio" value="radio"><br>
+            <input type="reset"><br> 
+        </form>
+    </body>
+
+    <!--
+        button 버튼 생성
+        checkbox 체크박스 생성
+        file 파일 입력방식 생성
+        hidden 보이지 x
+        image 이미지 형태 생성
+        password 비밀번호 입력 양식을 생성
+        radio 라디오 버튼 생성
+        reset 초기화 버튼 생성
+        submit 제출 버튼 생성
+        text 입력양식 제공
+
+        그리고 일반적으로 input 태그는 form 태그 안에 있어야 함.
+        태그 내부에 문자 넣고 싶으면 value속성 이용
+
+        이 외에도 email, month, number, range, search, tel, time, url, week... 등의 속성이 존재
+    -->
+
+    <!-- 
+        
+            <label for="cat_ck">고양이</label>
+            <input type="checkbox" id="cat_ck" value="cat" name="animal">
+            <label for="dog_ck">멍멍이</label>
+            <input type="checkbox" id="dog_ck" value="dog" name="animal">
+            <label for="pick_ck">삐약이</label>
+            <input type="checkbox" id="pick_ck" value="pick" name="animal">
+
+            <br>
+            
+            label 태그는 input태그를 설명하는데 사용되는데, 
+            input 태그에 id 속성을 입력하고 label 태그에 for 속성을 입력하여 연결시킬 수 있다
+
+            머 이런거지
+            강아지 체크박스
+            고양이 체크박스
+
+            강아지만 눌러도 체크박스 체크되고 머 이런거
+   -->
+
+
+   <!--
+        checkbox나 radio > name을 같게 해야 분류가 된다...... 
+   -->
+
+
+
+
+</html>
