@@ -1,0 +1,29 @@
+<!Doctype html>
+<html>
+
+<!--
+    웹 브라우저마다 표시되는 video 태그의 형태가 일관되지 않아서 
+    웹페이지를 디자인할 때 문제가 될 수 있다.
+    이러한 문제를 해결하기 위해서 video.js를 사용한다.
+
+-->
+    <head>
+        <title>video.js Basic</title>
+        <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/c/video.js"></script>
+    </head>
+    <body>
+        <!--
+            1. head태그에 link태그와 script 태그를 입력한다.
+            (다른 개발자가 만든 스타일 시트와 자바스크립트 사용 방법과 동일)
+            2. video 태그 생성하고 class 속성과 data-setup속성을 입력하면 끝.
+            >> 모든 웹브라우저에서 동일한 형태로 사용
+        -->
+
+        <video controls="controls" width="640" height="360"
+            class="video-js vjs-default-skin" data-setup="{}">
+            <source src="Wildlife.mp4" type="video/mp4">
+            <sourcr src="Wildlife.mp4" type="video/webm"></sourcr>
+        </video>
+    </body>
+</html>

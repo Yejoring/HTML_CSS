@@ -1,0 +1,29 @@
+<!--
+    입력양식을 설명하는 태그는 fieldset과 legend 태그이다.
+    legend태그는 fieldset태그 안에서만 사용가능.
+ -->
+
+ <!Doctype html>
+ <html>
+     <head><title>fieldset and legend</title></head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>입력 양식</legend>
+            
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="mail">이메일</label></td>
+                    <td><input id="mail" type="email"></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </fieldset>
+        </form>
+    </body>
+ </html>
