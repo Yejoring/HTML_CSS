@@ -1,0 +1,38 @@
+<!--
+    자손 선택자는 특정한 태그 아래 있는 자손을 선택할 때 사용하는 선택자.
+
+    선택자A>선택자B {}
+    : 선택자A의 직계자손에 위치하는 선택자 B 선택함.
+
+ -->
+
+
+ <!Doctype html>
+ <html>
+     <head><title>CSS3 Selector Basic</title>
+        <style>
+            #header>h1{
+                color:red;
+            }
+            #section>h1{
+                color : orange;
+            }
+            
+        </style>
+    
+    </head>
+     <body>
+         <div id="header">
+             <h1 class="title">니냐니냐뇨</h1>
+             <div id="nav">
+                 <h1>navigation</h1>
+             </div>
+         </div>
+         <div id="section">
+             <h1 class="title">집에 가고 싶어...</h1>
+             <p>제발 나좀 집에 보내줘 ㅅㅂ ㅜㅜ</p>
+         </div>
+     </body>
+ </html>
+
+ <!-- nav태그엔 적용이 안 되는 것을 알 수 있다. -->
