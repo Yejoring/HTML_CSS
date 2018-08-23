@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>상태선택자와 동위선택자 복합</title>
+    <style>
+        /*
+            input tag의 type속성이 checkbox인 태그가 체크되었을 때 바로 뒤에 위치하는 div태그의 height속성을 0px로 적용
+        */
+        input[type=checkbox]:checked+div{
+            height:0px;
+        }
+        div{
+            overflow:hidden;
+            width:650px;
+            height:300px;
+            /*변환효과적용*/
+      
+            -webkit-transition-duration:1s;
+            -moz-transition-duration:1s;
+            -o-transition-duration:1s;
+            transition-duration:1s;
+        }
+        /* 엄청 신기함... 체크상태를 변경할 때마다 글자가 사라졌다 나타났다..! 글자가 위아래로 올라가는 애니메이션!
+            
+        */
+
+    </style>
+</head>
+<body>
+       <label for="checkbox">체크해봐</label>
+       <input type="checkbox" id="checkbox" name="cb"/>
+       <div>
+           <h1>Lorem ipsum</h1>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       </div>
+</body>
+</html>

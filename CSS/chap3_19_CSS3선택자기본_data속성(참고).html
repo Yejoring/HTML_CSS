@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery Mobile 코드</title>
+    <link rel="stylesheet"
+          href="http:"
+</head>
+<body>
+       <!-- 
+           웹 표준에 따르면 각각의 태그에 지정된 속성 이외의 것을 사용하면 안됨.
+           속성 앞에 data- 붙이면 사용자 지정 속성으로 인정해줌.
+           위에서 data-page 속성은 웹 표준에 존재하지 않고 임의로 설정한 것.
+
+           이런 속성은 아주 많이 사용됨. 특히 jQuery에서.
+           밑은 jQuery Mobile 프레임워크를 사용한 코드로서 div 태그에 data-role 속성을 입력하면 레이아웃을 자동으로 구성해줌.
+       -->
+    <div data-role="page">
+        <div data-role="header">
+            <h1>HTML5</h1>
+            <div data-role="content">
+                <ul data-role="listview">
+                    <li data-role="list-divider">HTML5</li>
+                    <li>Multimedia</li>
+                    <li>Connectivity</li>
+                    <li>Device Access</li>
+                    <li data-role="list-divider">CSS3</li>
+                    <li>Animation</li>
+                    <li>3D Transform</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

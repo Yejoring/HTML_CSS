@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>기본문자선택자</title>
+    <style>
+        /*시작 문자 선택자 관련 CSS*/
+        p::first-letter{
+            font-size:3em;
+            color:blue;
+        }
+        p::first-line{
+            color:red;
+        }
+
+        /*전후 문자 선택자 관련 CSS*/
+        p{
+            counter-increment:rint;
+        }
+        p::before {
+            content: counter(rint) ".";
+        }
+        p::after{
+            content:"-" attr(data-page) " page";
+        }
+    </style>
+</head>
+<body>
+    <!--
+        문자 가상 요소 선택자는 태그 내부의 특정한 조건의문자를 선택하는 선택자.
+        :: 로 기호를 사용하는 것이 표준이지만 :로해도 ㅇㅋ
+        
+        <시작 문자 선택자> : 태그 내부의 첫 번째 글자와 첫 번째 줄을 선택할 때 사용하는 선택자
+        ::first-letter      첫 번째 글자를 선택함
+        ::first-line        첫번째 줄을 선택
+
+        <전후문자 선택자> : 태그 전후에 위치하는 공간을 선택하는 선택자
+        ::after            태그 뒤에 위치하는 공간 선택
+        ::before           태그 앞에 위치하는 공간 선택
+
+        전후문자 선택자는 content 스타일 속성을 입력가능. (다른 선택자에는 불가능) >> 잘 안씀
+
+        data-page 속성이랑 p:: after p::before 부분참고해서 적용
+    -->
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p data-page="52">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <p data-page="273">
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem,
+        Aenean ac erat et massa vehicula laoreet consequat et sem.
+    </p>
+</body>
+</html>
