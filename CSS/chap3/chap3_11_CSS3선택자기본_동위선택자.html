@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CSS3 Selector Basic</title>
+    <style>
+        /*
+            h1의 뒤에 있는 h2라는 태그를다 찾아서 백그라운드 컬러를 오렌지 색으로 바꾼다
+        */
+        h1~h2 {
+            background-color:orange;
+        }
+        /*
+            h1의 바로 뒤에 있는 h2라는 태그 한개만을 찾아 글자색을 빨간색으로 바꾼다
+        */
+        h1+h2{
+            color:red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Header1</h1>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+    <h2>Header2</h2>
+   <!--
+    <ul>
+        <li>CSS3 Selector Basic</li>
+        <li>CSS3 Selector Basic</li>
+        <li>CSS3 Selector Basic</li>
+        <li>CSS3 Selector Basic</li>
+    </ul>
+
+    이라면,
+        body
+         ul
+    li   li   li   li
+
+    동위 선택자를 사용하면 이러한 동위 상태에 있는 태그의 위치 관계를 파악가능.
+
+        
+    선택자A + 선택자B : 선택자 바로 뒤에 있는 선택자 B를 선택한다.
+       (직계로)
+
+    선택자A ~ 선택자B : 선택자A 뒤에 있는 선택자B를 선택한다
+       (선택자A  뒤에 다)
+   
+    ** 후손, 자손 선택자와 비슷함을 생각하라 
+
+    어디에서 사용되느냐 하면, 주로 CSS3 애니메이션을 통해 동적으로 움직이는 레이아웃을 구성할 때 사용한다.
+   -->
+</body>
+</html>
