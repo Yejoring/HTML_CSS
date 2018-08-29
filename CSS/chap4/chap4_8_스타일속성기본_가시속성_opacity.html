@@ -1,0 +1,28 @@
+<!--
+    opacity 속성은 태그의 투명도를 조정하는 스타일 속성이다.
+    0.0~1.0까지의 값을 입력할 수 있으며,
+    0.0은 투명
+    1.0은 불투명 상태.
+
+ -->
+
+ <!Doctype html>
+ <head><title>opacity 속성</title>
+    <style>
+        p:first-of-type, p:last-of-type{
+            font-size:110%;
+            color:blue;
+        }
+
+        p:nth-of-type(2){
+            background-color: black;
+            color : white;
+            opacity : 0.3;
+        }
+    </style>
+</head>
+ <body>
+     <p>Dummy</p>
+     <p>안녕하세요, 저는 언제쯤 집에 갈 수 있을까요?</p>
+     <p>Dummy</p>
+ </body>

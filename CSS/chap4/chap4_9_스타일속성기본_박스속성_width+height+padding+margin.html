@@ -1,0 +1,72 @@
+<!-- 
+    
+    박스속성은 margin, border, padding, height, width 속성을 통틀어 말한다.
+    여기선 width속성과 height 속성을 살펴보자.
+
+    *
+    margin > 테두리 밖 영역
+    border > 테두리 속성
+    padding > 테두리 안 영역
+    글자(height, width)
+    
+-->
+
+<!Doctype html>
+<html>
+    <head><title>width, height 속성</title>
+       <style>
+           div {
+               width:100px;
+               height:100px;
+           }
+           div#wh{
+             
+               background-color:red;
+               margin : 0px 0px 20px 0px;
+           }
+           div#mp{
+            
+               background-color:yellow;
+               border:20px solid black;
+
+               margin:10px;
+               padding:30px;
+           }
+           /*
+            전체너비 : width+2*(margin+border+padding)
+            전체높이 : height+2*(margin+border+padding)
+
+            margin, border, padding은 양쪽에 2개씩 위치하므로 2를 곱하는 것이다.
+
+            이 때 margin 속성과 padding 속성은 2개 한꺼번에 지정하거나 // 왼,오, 위, 아래를 각각 지정가능.
+           
+           */
+
+           div#mp2{
+          
+               background-color:lime;
+               /* margin : 위아래 왼쪽오른쪽*/
+               /* padding : 위아래 왼쪽오른쪽  두 개 한꺼번에 지정*/
+               margin:0 30px; padding:0 30px;
+           }
+           div#mp3{
+         
+               background-color:yellowgreen;
+               /*
+                1. margin-top, margin-left... 같은 속성으로 한개씩 지정
+                2. margint : top right bottom left
+                (시계방향)
+               */
+
+               margin:10px 20px 30px 40px;
+               
+           }
+       </style> 
+    </head>
+    <body>
+        <div id="wh">width와 height속성</div>
+        <div id="mp">margin및 padding 속성</div>
+        <div id="mp2">margin및 padding 속성 2 </div>
+        <div id="mp3">margin및 padding 속성 3</div>
+    </body>
+</html>

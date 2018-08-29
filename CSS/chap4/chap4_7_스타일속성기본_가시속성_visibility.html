@@ -1,0 +1,37 @@
+<!--
+    visibility 속성은 대상을 보이거나 보이지 않게 지정하는 스타일 속성.
+    visible  > 태그를 보이게 만든다
+    hidden > 태그를 보이지 않게 만든다
+    collapse > table 태그를 보이지 않게 만든다
+** display : none 과 visibility : hidden의 차이점 **
+전자는 진짜 태그가 사라지는거라서 빈공간 없고 후자는 그태그가 차지하는 만큼 빈공간 생성
+
+** collapse와 hidden 차이 **
+
+-->
+
+ <!Doctype html>
+ <html>
+     <head><title>visibility속성</title>
+        <style>
+            table {
+                /*visibility : collapse;*/
+                visibility : hidden;
+
+                /*
+                    collapse는 display:none처럼 아예 삭제해버리고
+                    hidden은 그냥 지워버림.
+                */
+            }
+        </style>
+    </head>
+     <body>
+        <p>오늘도 뚠뚠 예지는 뚠뚠 열심히 일을 하네</p>
+        <table border="1">
+            <tr><th>test1</th><th>test2</th></tr>
+            <tr><td>Test</td><td>Test</td></tr>
+            <tr><td>Test</td><td>Test</td></tr>
+        </table>
+        <p>오늘도 뚠뚠 예지는 뚠뚠 열심히 일을 하네</p>
+     </body>
+ </html>

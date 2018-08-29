@@ -1,0 +1,41 @@
+<!-- 
+    1. border-width 속성과 border-style 속성
+    전자 : 테두리의 너비를 지정
+
+    border-width:[border-top-width] [border-right-width] [border-bottom-width] [border-left-width];
+
+    또는 키워드
+    inherit
+    initial
+    medium
+    thick
+    thin
+    사용.
+
+    후자 : 테두리의 형태를 지정. 
+    border-style : none|hidden|dashed|solid|double|groove|ridge|inset|outset
+
+    테두리를 넣을 때는 border-style속성과 border-width, border-color 모두 지정해야 함.
+
+-->
+
+<!Doctype html>
+<html>
+    <head>
+        <title>테두리속성_border-width,border-style</title>
+        <style>
+            .box{
+                border-width:10px 20px 20px 10px;
+                border-style:double;
+                border-color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            안녕하세요 감사해요 잘 있어요 다시 만나요.
+
+        </div>
+
+    </body>
+</html>

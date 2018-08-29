@@ -1,0 +1,30 @@
+<!--
+    배경 속성 > 특정 태그의 배경이미지 또는 색상을 지정하는 스타일 속성
+    1. background-image 속성
+    url 단위 또는 그레이디언트 입력함.
+
+    background-image:(none|url(url to image)|linear-gradient())
+ -->
+
+ <!Doctype html>
+ <html>
+    <head>
+        <title>background-image 속성</title>
+        <style>
+            body{
+                background-image : url('4.jpg');
+                /* background-size에 두번째 속성 입력하면 그건 높이가 됨.
+                background-size:100% 250px; > 높이가 250px로 지정
+                ** %, % 단위로는 안되는 모양. 
+                ** background-size에 쉼표를 사용해 크기단위 입력하면 여러개의 파일에 적용하는 것..
+
+                */
+                background-size:30% 400px;
+            }
+
+            /* 여러개의 이미지 중첩사용 가능*/
+        </style>
+    </head>
+
+ </html>
+
